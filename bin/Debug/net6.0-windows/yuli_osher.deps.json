@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "yuli_osher/1.0.0": {
+        "runtime": {
+          "yuli_osher.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "yuli_osher/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
