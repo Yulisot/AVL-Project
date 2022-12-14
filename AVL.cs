@@ -185,8 +185,7 @@ namespace AVL1
                 return;
             }
 
-            // Store nodes in Inorder (which is sorted
-            // order for BST)
+
             storeBSTNodes((AVL)root.left, nodes);
             nodes.Add(root);
             storeBSTNodes((AVL)root.right, nodes);
@@ -226,69 +225,6 @@ namespace AVL1
             return buildTreeUtil(nodes, 0, n - 1);
         }
 
-        // public int Fix_Balance_Factor(AVL root,int key)
-        // {
-        //     //if (root == null)
-        //     //    return 0;
-        //     //int left = Fix_Balance_Factor((AVL)root.left,key);
-        //     //int right = Fix_Balance_Factor((AVL)root.right,key);
-        //     //root.BF =(left - right);
-        //     //return 1+Math.Max(left, right);
-        //     if (root == null)
-        //         return 0;
-
-        //     return Fix_Height((AVL)root.left) - Fix_Height((AVL)root.right);
-
-
-        // }
-        //public AVL Rotation(AVL root,int key)
-        // {
-        //     int balance = Fix_Balance_Factor(root, key);
-        //         //left left
-        //     if (root.BF > 1 && key < root.left.data)
-        //         return rightRotate((AVL)root);
-        //     if (balance < -1 && key > root.right.data)
-        //         return leftRotate(root);
-        //     if (balance > 1 && key > root.left.data)
-        //     {
-        //         root.left = leftRotate((AVL)root.left);
-        //         return rightRotate(root);
-        //     }
-        //     if (balance < -1 && key < root.right.data)
-        //     {
-        //         root.right = rightRotate((AVL)root.right);
-        //         return leftRotate(root);
-        //     }
-        //     return root;
-
-        // }
-        // AVL rightRotate(AVL y)
-        // {
-        //     AVL x = (AVL)y.left;
-        //     AVL T2 = (AVL)x.right;
-        //     // Perform rotation
-        //     x.right = y;
-        //     y.left = T2;
-        //     // Update heights
-        //     //y.height = Math.Max(Fix_Height((AVL)y.left),
-        //     //            Fix_Height((AVL)y.right)) + 1;
-        //     //x.height = Math.Max(Fix_Height((AVL)x.left),
-        //     //            Fix_Height((AVL)x.right)) + 1;
-        //     Fix_Height(x);
-        //     return x;
-        // }
-        // AVL leftRotate(AVL x)
-        // {
-        //     AVL y = (AVL)x.right;
-        //     AVL T2 = (AVL)y.left;
-        //     // Perform rotation
-        //     y.left = x;
-        //     x.right = T2;
-        //     // Update heights
-        //     Fix_Height(y);
-        //     // Return new root
-        //     return y;
-        // }
 
     }
     [Serializable]
